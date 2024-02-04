@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WORD GUESSING GAME</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="start">
+    <div id="heading">
+        <h1>WORD GUESSING GAME</h1>
+    </div>
+    <p>
+<a href="#" onclick="instructions()">Instructions</a> <br>
+<a href="#" onclick="easyMode()">Easy Mode- 10 attempts</a> <br>
+<a href="#" onclick="hardMode()">Hard Mode- 5 attempts</a> </p>
+</div>
+
+<div id="instructions">
+   <h2> Word Guessing Game- Instructions: </h2>
+<p>
+Objective: The objective of the game is to guess the hidden word correctly within the given number of attempts. </p>
+<p>
+Game Modes:
+<br>
+Easy Mode: Players get 10 attempts to guess the word. <br>
+Hard Mode: Players get only 5 attempts to guess the word. </p> 
+<p>Gameplay:
+
+At the start of the game, a word is selected or generated, and its length is displayed as a series of underscores, one underscore representing each letter in the word.
+Players are prompted to input their guesses, one letter at a time or the entire word.
+After each guess, the game provides feedback:
+Reveals the correctly guessed letters in their respective positions.
+Indicates if any incorrect letters were guessed.
+Players continue guessing until they correctly guess the word, run out of attempts, or choose to quit the game. </p>
+<p>Winning:
+
+If the player guesses the word correctly within the allotted attempts, they win the game. </p>
+<p>Losing:
+
+If the player exhausts all attempts without correctly guessing the word, they lose the game.
+Players may have the option to retry the same word or start a new game. </p>
+
+<a href="#" onclick="back()">Back to Main Menu</a>
+</div>
+
+<div id="game">
+ <div id="word-display">Word: </div>
+ <div id="guess-input">
+    <input type="text" id="guess" placeholder="Enter a letter:">
+    <a href="#" onclick="checkGuess()">Guess!</a>
+</div>
+<div id="attempts-total">Total Attempts: </div>
+<div id="attempts-left">Attempts Left: </div>
+<div id="letters-guessed">Letters Guessed: <span id="guessed-letters"></span></div>
+<div id="feedback"></div>
+<br>
+<a href="#" onclick="back()">Back to Main Menu</a>
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

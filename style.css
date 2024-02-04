@@ -1,0 +1,38 @@
+#start{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: 2px solid black; 
+    padding: 20px; 
+    border-radius: 20px;
+    border-color: firebrick;
+   
+}
+body{
+    background-color: coral;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(69, 22, 2);
+}
+a{
+    color: rgb(69, 22, 2);
+    list-style: none;
+}
+#instructions{
+    display: none;
+    color: rgb(69, 22, 2);
+}
+#game{
+    display:none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+input{
+    background-color: coral;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}

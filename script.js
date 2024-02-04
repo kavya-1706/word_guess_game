@@ -34,7 +34,14 @@ document.getElementById("word-display").innerHTML = "<p>" + dashes + "</p>";
 function checkGuess() {
     
     var userLetter = document.getElementById("guess").value.toLowerCase(); // Convert to lowercase for case-insensitive comparison
-
+    if (userLetter.length !== 1 || !/^[a-z]$/.test(userLetter)) {
+       
+        var feedbackArea = document.getElementById("feedback");
+        var feedbackMessage = document.createElement("p");
+        feedbackMessage.textContent = "Please enter a single letter from A to Z.";
+        feedbackArea.appendChild(feedbackMessage);
+        return;  
+    }
     document.getElementById("guess").value = "";
     if (isLetterAlreadyGuessed(userLetter)) {
         clearFeedbackMessages();

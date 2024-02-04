@@ -35,7 +35,7 @@ function checkGuess() {
     
     var userLetter = document.getElementById("guess").value.toLowerCase(); // Convert to lowercase for case-insensitive comparison
     if (userLetter.length !== 1 || !/^[a-z]$/.test(userLetter)) {
-       
+        clearFeedbackMessages();
         var feedbackArea = document.getElementById("feedback");
         var feedbackMessage = document.createElement("p");
         feedbackMessage.textContent = "Please enter a single letter from A to Z.";
